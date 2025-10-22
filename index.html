@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required minlength="10" maxlength="30">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required minlength="10" maxlength="30">
+                </div>
+
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="number" id="cpf" placeholder="Digite seu CPF" required min="10000000000" max="99999999999">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite uma senha">
+                </div>
+
+                <div>
+                    <label for="foto">Foto de Perfil:</label>
+                    <input type="file" id="foto" accept=".jpg,.jpeg,.png,.svg">
+                </div>
+
+                <div>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" max="2007-10-22">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gostos pessoais / Tamanhos</legend>
+
+                <div>
+                    <label for="cor-preferida">Cor preferida:</label>
+                    <input type="color" id="cor-preferida">
+                </div>
+
+                <div>
+                    <h2>Selecione seu estilo musical favorito:</h2>
+
+                    <div>
+                        <input type="checkbox" id="funk">
+                        <label for="funk">Funk</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="piseiro">
+                        <label for="piseiro">Piseiro</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="rock">
+                        <label for="rock">Rock</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="sertanejo">
+                        <label for="sertanejo">Sertanejo</label>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Selecione sua preferencia:</h2>
+
+                    <div>
+                        <input type="radio" id="doce" name="preferencia">
+                        <label for="doce">Doce</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="salgado" name="preferencia">
+                        <label for="salgado">Salgado</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ambos" name="preferencia">
+                        <label for="ambos">Ambos</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="tamanho">Selecione o tamanho de camiseta:</label>
+                    <select name="tamanho" id="tamanho">
+                        <option disabled selected>Selecione...</option>
+                        <option value="PP">PP</option>
+                        <option value="PP">PP</option>
+                        <option value="PP">PP</option>
+                        <option value="PP">PP</option>
+                        <option value="PP">PP</option>
+                        <option value="PP">PP</option>
+                        <option value="PP">PP</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for=""></label>
+                    <textarea name="" id="" placeholder="" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html> 
